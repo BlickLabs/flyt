@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script>
+      dataLayer.push({'event': 'cotizar-envio-cover'});
+      dataLayer.push({'event': 'cotizar-envio-fold-3'});
+      dataLayer.push({'event': 'cotizar-envio-fold-4'});
+      dataLayer.push({'event': 'cotizar-envio-fold-5'});
+    </script>
+
+    {% include 'seo/tracking/googleTagManager.njk' %}
     {% include 'seo/tracking/googleanalytics.njk' %}
     {% include 'seo/metatags.njk' %}
     {% block extra_css %}{% endblock %}
-    <link rel="stylesheet" href="/css/{{ projectFilesName }}.libs.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <link runat="server" rel="shortcut icon" href="/img/favicon/" type="image/x-icon"/>
-    <link runat="server" rel="icon" href="/img/favicon/" type="image/ico"/>
-    <title>{% block title %}{% endblock %} | Site</title>
-    {% include 'seo/tracking/facebookpixel.njk' %}
+    <link rel="stylesheet" href="css/{{ projectFilesName }}.libs.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link runat="server" rel="shortcut icon" href="img/favicon/flyt-favicon.png" type="image/x-icon"/>
+    <link runat="server" rel="icon" href="img/favicon/flyt-favicon.png" type="image/ico"/>
+    <title>{% block title %}{% endblock %} | Flyt</title>
   </head>
   <body>
+    {% include 'seo/tracking/googleTagManagerNoScript.njk' %}
     <div id="page">
-      {% if section == 'es/index' or section == 'index' %}
-        {% include 'partials/navbar.njk' %}
-      {% else %}
-        {% include 'partials/navbar-en.njk' %}
-      {% endif %}
+      {% include 'partials/navbar.njk' %}
       <main>
         {% block content %}{% endblock %}
       </main>
-      {% if section == 'es/index' or section == 'index' %}
-        {% include 'partials/footer.njk' %}
-      {% else %}
-        {% include 'partials/footer-en.njk' %}
-      {% endif %}
+      {% include 'partials/footer.njk' %}
     </div>
     {% block js_libs_config %}
     {% endblock %}
-    <script src="/js/{{ projectFilesName }}.libs.js"></script>
+    <script src="js/{{ projectFilesName }}.libs.js"></script>
     {% block js_project_config %}
     {% endblock %}
-    <script src="/js/{{ projectFilesName }}.js"></script>
+    <script src="js/{{ projectFilesName }}.js"></script>
     {% block js_inline %}
     {% endblock %}
+    {% include 'seo/tracking/hubspotEmbedCode.njk' %}
   </body>
 </html>
