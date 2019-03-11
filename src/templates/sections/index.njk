@@ -1,11 +1,11 @@
 {% extends "partials/base.njk" %}
 
-{% block title %}This{% endblock %}
+{% block title %}Envíos de mercancía al mejor precio{% endblock %}
 
-{% set meta_description = "" %}
+{% set meta_description = "Garantizamos el envío de tu mercancía al mejor precio del mercado" %}
 {% set og_url = "" %}
-{% set og_title = "" %}
-{% set og_description = "" %}
+{% set og_title = "Envíos de mercancía al mejor precio | Flyt" %}
+{% set og_description = "Garantizamos el envío de tu mercancía al mejor precio del mercado" %}
 {% set og_img = "" %}
 {% set og_img_width = "" %}
 {% set og_img_height = "" %}
@@ -14,8 +14,70 @@
 
 {% block content %}
 <section class="home">
-  <section class="home-cover">
-    <h1>{{es.home.title}}</h1>
+  <section class="cover">
+    <h1 class="bigTitle">Garantizamos <span>el envío de tu mercancía al</span> mejor precio del mercado</h1>
+    <a class="btnBase yellow" href="" onclick="dataLayer.push({'event': 'cotizar-envio-cover'});">Cotizar envío</a>
+  </section>
+
+  <section class="send">
+    <h2 class="subtitleMd">¿Qué envías?</h2>
+    <div class="send-package-wrapper">
+      {% for package in es.home.send.packages %}
+      <a class="send-package" href="">
+        <div class="send-package-img-container">
+          <img class="send-package-img" src="{{package.img}}" alt="{{package.title}}">
+        </div>
+        <p class="send-package-title">{{package.title}}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="quotation">
+    <h2 class="quotation-description">Envía desde <span>una bicicleta</span>, hasta una <span>nave espacial</span></h2>
+    <a class="btnBase orange" href="" onclick="dataLayer.push({'event': 'cotizar-envio-fold-3'});">Cotizar envío</a>
+  </section>
+
+  <section class="work">
+    <h2 class="subtitleMd">¿Cómo funciona?</h2>
+    <div class="work-item-wrapper">
+      {% for item in es.home.work.items %}
+      <div class="work-item">
+        <div class="work-item-icon-container">
+          <img class="work-item-icon" src="{{item.icon}}" alt="{{item.title}}">
+        </div>
+        <h3 class="work-item-title">{{item.title}}</h3>
+        <p class="work-item-description">{{item.description}}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <a class="btnBase blue" href="" onclick="dataLayer.push({'event': 'cotizar-envio-fold-4'});">Cotizar envío</a>
+  </section>
+
+  <section class="why">
+    <h2 class="subtitleMd">¿Por qué Flyt?</h2>
+    <div class="why-bg"></div>
+    <div class="why-description-wrapper">
+      <p class="why-description">Tranquilidad de que tu envío está en las mejores manos</p>
+      <p class="why-description">Reduce tu impacto ambiental</p>
+      <p class="why-description">Ahorra hasta un 75% contra tarifas normales</p>
+    </div>
+    <a class="btnBase orange" href="" onclick="dataLayer.push({'event': 'cotizar-envio-fold-5'});">Cotizar envío</a>
+  </section>
+
+  <section class="they">
+    <h2 class="they-title">Ellos ya se están beneficiando de Flyt</h2>
+    <div class="they-card-wrapper">
+      {% for card in es.home.they.cards %}
+      <div class="they-card">
+        <div class="they-card-avatar-container">
+          <img class="they-card-avatar" src="{{card.avatar}}" alt="{{card.title}}">
+        </div>
+        <h3 class="they-card-name">{{card.name}}</h3>
+        <p class="they-card-description">{{card.description}}</p>
+      </div>
+      {% endfor %}
+    </div>
   </section>
 </section>
 {% endblock %}
