@@ -1,0 +1,355 @@
+.home
+  .cover
+    align-items center
+    background-image url("../img/backgrounds/home-cover-2x.jpg")
+    background-position center
+    background-size cover
+    display flex
+    flex-direction column
+    height 488px
+    justify-content center
+    padding 0 30px
+
+  .send
+    padding-top 32px
+
+    .subtitleMd
+      margin-bottom 20px
+
+    &-package
+      align-items center
+      border-right solid 1px #e5e5e5
+      display flex
+      flex 1
+      flex-direction column
+      flex-wrap wrap
+      // height 192px
+      justify-content space-between
+      padding 0 25px 15px 25px
+      width 160px
+
+      &:last-child
+        border-right none
+
+      &-wrapper
+        border-top solid 1px #e5e5e5
+        display flex
+        flex-wrap wrap
+        justify-content center
+
+      &-img
+        max-height 100%
+        max-width 100%
+
+        &-container
+          align-items center
+          display flex
+          height 145px
+
+      &-title
+        color $c-black
+        font-family 'avenir-next-medium'
+        -webkit-font-smoothing antialiased
+        font-size 18px
+        font-weight $regular
+        line-height 20px
+        text-align center
+
+  .work
+    padding-top 55px
+
+    &-item
+      align-items center
+      display flex
+      flex-direction column
+      margin 12px
+      position relative
+      width 189px
+
+      &:after
+        background-color #e5e5e5
+        content ""
+        display block
+        height 1px
+        position absolute
+        right -70px
+        top 16px
+        width 118px
+
+      &:last-child
+        &:after
+          content none
+
+      &-wrapper
+        display flex
+        justify-content center
+        margin-top 50px
+
+      &-icon
+        height auto
+        width 32px
+
+        &-container
+          height 32px
+
+      &-title
+        color $c-blue-2
+        font-family 'avenir-next-medium'
+        -webkit-font-smoothing antialiased
+        font-size 22px
+        font-weight $regular
+        letter-spacing 1.6px
+        margin 37px 0 12px 0
+        text-transform uppercase
+
+      &-description
+        color #9b9b9b
+        font-family 'avenir-next-medium'
+        -webkit-font-smoothing antialiased
+        font-size 15px
+        font-weight $regular
+        line-height 21px
+        text-align center
+
+    .btnBase.blue
+      margin 42px auto 0 auto
+
+  .quotation
+    align-items center
+    background-image url("../img/backgrounds/cotizar-2x.jpg")
+    background-position center
+    background-size cover
+    display flex
+    flex-direction column
+    height 290px
+    justify-content center
+
+    &-description
+      color $c-white
+      font-family 'avenir-next-regular'
+      -webkit-font-smoothing antialiased
+      font-size 25px
+      font-weight $regular
+      line-height 40px
+      margin-bottom 30px
+      max-width 425px
+      text-align center
+
+      span
+        font-family 'avenir-next-demi'
+        -webkit-font-smoothing antialiased
+
+  .why
+    padding 60px 0 74px 0
+
+    &-bg
+      background-image url("../img/backgrounds/por-que-flyt-2x.jpg")
+      background-position bottom
+      background-size cover
+      height 370px
+      margin-top 58px
+
+    &-description
+      color $c-black
+      font-family 'avenir-next-medium'
+      -webkit-font-smoothing antialiased
+      font-size 22px
+      font-weight $regular
+      line-height 30px
+      margin 0 30px 30px 30px
+      max-width 275px
+      text-align center
+
+      &-wrapper
+        display flex
+        flex-wrap wrap
+        justify-content center
+        margin-top 40px
+
+    .btnBase.orange
+      margin 0 auto
+
+  .they
+    background-color #f5f5f5
+    padding 54px 0 23px 0
+
+    &-title
+      color $c-black
+      font-family 'avenir-next-demi'
+      -webkit-font-smoothing antialiased
+      font-size 32px
+      font-weight $regular
+      line-height 38px
+      margin 0 auto
+      max-width 450px
+      text-align center
+
+    &-card
+      background-color $c-white
+      border solid 1px #e5e5e5
+      height 174px
+      margin 0 46px 46px 46px
+      padding 16px 0
+      position relative
+      width 390px
+
+      &-wrapper
+        display flex
+        flex-wrap wrap
+        justify-content center
+        margin 82px 0 0 40px
+
+      &-avatar
+        height 139px
+        position absolute
+        width 139px
+
+        &-container
+          align-items center
+          background-color #e5e5e5
+          border solid 1px #e5e5e5
+          border-radius 100px
+          display flex
+          height 147px
+          justify-content center
+          left -73.5px
+          position absolute
+          top -27px
+          width 147px
+
+      &-name
+        border-bottom solid 1px #e5e5e5
+        color $c-black
+        font-family 'avenir-next-demi'
+        -webkit-font-smoothing antialiased
+        font-size 23px
+        font-weight $regular
+
+      &-description
+        color #323232
+        font-family 'avenir-next-italic'
+        -webkit-font-smoothing antialiased
+        font-size 13px
+        font-weight $regular
+        line-height 20px
+        padding-top 15px
+
+      &-name, &-description
+        padding-right 26px
+        padding-left 94px
+
+@media screen and (max-width 1018px)
+  .home
+    .they
+      &-card
+        margin-left 73px
+
+@media screen and (max-width 980px)
+  .home
+    .send
+      &-package
+        border-bottom solid 1px #e5e5e5
+        padding-top 15px
+        width: 33.33%
+
+        &:nth-child(3)
+          border-right none
+
+        &-wrapper
+          margin-left auto
+          margin-right auto
+          // width 480px
+          width 100%
+
+@media screen and (max-width 749px)
+  .home
+    .work
+      &-item
+        &:nth-child(2)
+          &:after
+            content none
+
+        &-wrapper
+          flex-wrap wrap
+          margin-left auto
+          margin-right auto
+          width 430px
+
+    .they
+      &-card
+        height auto
+
+@media screen and (max-width 480px)
+  .home
+    .cover
+      height 301px
+
+      & .bigTitle
+        font-size 21px
+        line-height 23px
+        max-width 280px
+
+    .send
+      &-package
+        border-bottom solid 1px #e5e5e5
+        flex-basis 50%
+        padding-top 15px
+
+        &:nth-child(3)
+          border-right solid 1px #e5e5e5
+
+        &-wrapper
+          width auto
+
+        &-img
+          &-container
+            justify-content center
+            margin-bottom 20px
+
+    .quotation
+      &-description
+        font-size 20px
+        line-height 32px
+        padding 0 30px
+
+    .work
+      &-item
+        &:after
+          content none
+
+        &-title
+          font-size 18px
+
+        &-wrapper
+          width 189px
+
+    .why
+      &-bg
+        height 170px
+
+      &-description
+        font-size 18px
+        line-height 26px
+
+    .they
+      &-title
+        font-size 26px
+        line-height 32px
+        padding 0 30px
+
+      &-card
+        &-wrapper
+          margin-left 20px
+          margin-right 0
+
+        &-avatar
+          height 91px
+          width 91px
+
+          &-container
+            height 99px
+            left -49.5px
+            width 99px
+
+        &-name, &-description
+          padding-left 70px
