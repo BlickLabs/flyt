@@ -1,16 +1,26 @@
 <footer class="footer">
-  <div class="footer-logo-container">
-    <a href="index.html">
-      <img src="{{es.footer.logo}}" alt="{{es.footer.logoAlt}}">
-    </a>
-  </div>
-  <div>
-    {% for section in es.footer.sections %}
-    <div>
-      <a href="{{section.link}}">
-        <span>{{section.name}}</span>
+  <div class="footer-content">
+    <div class="footer-logo-container">
+      <a href="/">
+        <img class="footer-logo" src="{{es.footer.logo}}" alt="{{es.footer.logoAlt}}">
       </a>
     </div>
-    {% endfor %}
+    <div class="footer-column">
+      {% for section in es.footer.sections %}
+      <a href="{{section.link}}"><h3 class="views">{{section.name}}</h3></a>
+      {% endfor %}
+      <a class="email" href="mailto:hola@flyt.mx">hola@flyt.mx</a>
+    </div>
+    <div class="footer-column">
+      <h3 class="views">Dirección</h3>
+      <a class="address" href="https://goo.gl/maps/7TeSr6wLMJk" target="_blank">Torre del Árbol - Boulevard Manuel Ávila Camacho. Ávila Camacho #184 Piso 17, Reforma. Social, Miguel Hidalgo, Ciudad de México.</a>
+    </div>
+    <div class="footer-column">
+      <span class="convert">¿Te gustaría convertirte en Flytero?</span>
+      <a class="findOut" href="">Entérate aquí cómo</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="copyright">© Flyt <script type="text/javascript">document.write(new Date().getFullYear());</script> todos los derechos reservados</span>
   </div>
 </footer>

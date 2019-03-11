@@ -1,0 +1,60 @@
+.bigTitle
+  color $c-white
+  font-family 'avenir-next-demi'
+  -webkit-font-smoothing antialiased
+  font-size 36px
+  font-weight $regular
+  line-height 53px
+  margin-bottom 30px
+  max-width 650px
+  text-align center
+
+  span
+    font-family 'avenir-next-regular'
+    -webkit-font-smoothing antialiased
+
+.btnBase
+  align-items center
+  border-radius 4px
+  color $c-white
+  display flex
+  font-family 'avenir-next-demi'
+  -webkit-font-smoothing antialiased
+  font-size 20px
+  font-weight $regular
+  height 55px
+  justify-content center
+  width 165px
+
+  &.yellow
+    background-color $c-yellow
+
+    &:hover
+      background-color #ffb82b
+
+  &.blue
+    background-color $c-blue
+
+    &:hover
+      background-color #1659a5
+
+  &.orange
+    background-color $c-orange
+
+    &:hover
+      background-color #e83f29
+
+.subtitleMd
+  color $c-black
+  font-family 'avenir-next-medium'
+  -webkit-font-smoothing antialiased
+  font-size 32px
+  font-weight $regular
+  text-align center
+
+@media screen and (max-width 480px)
+  .btnBase
+    font-size 15px
+
+  .subtitleMd
+    font-size 24px

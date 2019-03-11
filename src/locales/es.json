@@ -1,29 +1,111 @@
 {
   "es": {
     "nav": {
-      "logo": "/img/logos/change-this.png",
+      "logo": "img/logos/logo-azul.png",
       "logoAlt": "Logo del sitio dentro de la barra de navegación",
       "hamburgerLogoAlt": "Logo del sitio dentro del menu hamburguesa",
       "hamburgerCloseAlt": "Ícono en forma de X para cerrar el menu hamburguesa",
       "sections": [
         {
-          "name": "Inicio",
+          "name": "Conviértete en Flytero",
           "link": "index.html",
-          "viewName": "homepage"
+          "viewName": "lala"
+        },
+        {
+          "name": "Contáctanos",
+          "link": "index.html",
+          "viewName": "lala2"
+        },
+        {
+          "name": "Cotizar envío",
+          "link": "index.html",
+          "linkBtnClass": "quote",
+          "viewName": "lala3"
         }
       ]
     },
     "home": {
-      "title": "Título de prueba"
+      "title": "Título de prueba",
+      "send": {
+        "packages": [
+          {
+            "img": "img/utils/envios-vehiculos-2x.jpg",
+            "title": "Vehículos"
+          },
+          {
+            "img": "img/utils/envios-articulos-domesticos-2x.jpg",
+            "title": "Artículos domésticos"
+          },
+          {
+            "img": "img/utils/envios-mudanzas-2x.jpg",
+            "title": "Mudanzas"
+          },
+          {
+            "img": "img/utils/envios-maquinaria-pesada-2x.jpg",
+            "title": "Maquinaria pesada"
+          },
+          {
+            "img": "img/utils/envios-tarimas-cajas-bultos-2x.jpg",
+            "title": "Tarimas, cajas, bultos"
+          },
+          {
+            "img": "img/utils/envios-otros-2x.jpg",
+            "title": "Otros"
+          }
+        ]
+      },
+      "work": {
+        "items": [
+          {
+            "icon": "img/icons/icono-cotiza.png",
+            "title": "cotiza",
+            "description": "Completa un sencillo formulario y dinos que quieres enviar."
+          },
+          {
+            "icon": "img/icons/icono-recibe.png",
+            "title": "recibe",
+            "description": "Recibirás ofertas competitivas de nuestra red de Flyteros."
+          },
+          {
+            "icon": "img/icons/icono-elige.png",
+            "title": "elige",
+            "description": "Compara las distintas ofertas, comprueba los detalles y valoraciones."
+          },
+          {
+            "icon": "img/icons/icono-relajate.png",
+            "title": "relájate",
+            "description": "Confía. Nosotros nos encargamos del resto."
+          }
+        ]
+      },
+      "they": {
+        "cards": [
+          {
+            "avatar": "img/utils/rodrigo-marquez.png",
+            "name": "Rodrigo Márquez",
+            "description": "\"La mejor manera de recibir distintivas ofertas sin la necesidad de realizar múltiples llamadas. Definitivamente volveré a usar Flyt, me ahorro: tiempo y dinero, pero sobre todo el servicio fue excepcional.\""
+          },
+          {
+            "avatar": "img/utils/claudia-lopez.png",
+            "name": "Claudia López",
+            "description": "\"Simple y efectivo, lo usaré con mayor frecuencia. Flyt hace que el proceso de envíos sea mucho más confiable y rápido.\""
+          }
+        ]
+      }
     },
     "footer": {
-      "logo": "/img/logos/logo-footer.png",
+      "logo": "img/logos/logo-transparente.png",
       "logoAlt": "Logo del sitio dentro del pie de página",
       "sections": [
         {
-          "name": "Inicio",
+          "name": "Acerca de nosotros",
           "link": "index.html",
-          "viewName": "homepage"
+          "viewName": "aboutus"
+        },
+        {
+          "name": "Contacto",
+          "link": "index.html",
+          "viewName": "contact"
         }
       ]
     }
