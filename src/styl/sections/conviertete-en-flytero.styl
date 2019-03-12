@@ -1,0 +1,239 @@
+.flytero
+  .cover
+    background-image url("../img/backgrounds/flytero-cover-2x.jpg")
+    background-position center
+    background-size cover
+    display flex
+    flex-direction column
+    height 383px
+    justify-content center
+    padding 0 75px
+
+    &-title
+      color $c-white
+      font-family 'avenir-next-medium'
+      -webkit-font-smoothing antialiased
+      font-size 40px
+      font-weight $regular
+      // margin-bottom 30px
+      // max-width 650px
+
+    &-description
+      color $c-white
+      font-family 'avenir-next-regular'
+      -webkit-font-smoothing antialiased
+      font-size 20px
+      font-weight $regular
+      line-height 28px
+      margin 20px 0 29px 0
+      // max-width 650px
+
+    &-icon
+      height 31px
+      width 42px
+
+  .characteristics
+    display flex
+    flex-wrap wrap
+    justify-content center
+    padding 83px 0 42px 0
+    position relative
+
+    &:after
+      background-color $c-gray
+      bottom 0
+      content ""
+      height 1px
+      position absolute
+      width 589px
+
+    &-card
+      align-items center
+      display flex
+      flex-direction column
+      margin 18px
+      width 181px
+
+    &-icon
+      height auto
+      width 32px
+
+      &-container
+        height 32px
+
+    &-title
+      color $c-blue-2
+      font-family 'avenir-next-demi'
+      -webkit-font-smoothing antialiased
+      font-size 13px
+      font-weight $regular
+      letter-spacing 0.9px
+      margin 12px 0 11px 0
+      text-align center
+      text-transform uppercase
+
+    &-description
+      color $c-black
+      font-family 'avenir-next-medium'
+      -webkit-font-smoothing antialiased
+      font-size 15px
+      font-weight $regular
+      text-align center
+
+  .steps
+    margin 0 auto
+    max-width 645px
+    padding 33px 0 94px 0
+
+    &-title
+      color $c-blue-2
+      font-family 'avenir-next-demi'
+      -webkit-font-smoothing antialiased
+      font-size 22px
+      font-weight $regular
+      letter-spacing 0.5
+      line-height 28px
+      margin-bottom 30px
+      max-width 220px
+      text-transform uppercase
+
+      &.titleVariant
+        font-family 'avenir-next-medium'
+
+    .card
+      border-left solid 1px $c-gray
+      margin-left 30px
+      margin-bottom 22px
+      padding-left 59px
+
+      &-icon
+        display inline-block
+        vertical-align middle
+
+      & .icon
+        &Register
+          height 29px
+          width 29px
+
+        &Search
+          height 32px
+          width 32px
+
+        &Sale
+          height 32px
+          width 32px
+
+        &Win
+          height 32px
+          width 32px
+
+        &Communicate
+          height 27px
+          width 27px
+
+        &Transport
+          height 24px
+          width 32px
+
+        &Confirm
+          height 31px
+          width 31px
+
+        &Deposit
+          height 30px
+          width 32px
+
+      &-title
+        color $c-black
+        display inline
+        vertical-align middle
+        font-family 'avenir-next-demi'
+        -webkit-font-smoothing antialiased
+        font-size 20px
+        font-weight $regular
+        margin-bottom 12px
+        margin-left 26px
+
+        &-container
+          display flex
+          margin 29px 0 12px 0
+
+      &-description
+        color $c-black
+        font-family 'avenir-next-medium'
+        -webkit-font-smoothing antialiased
+        font-size 17px
+        font-weight $regular
+        line-height 22px
+        margin-bottom 12px
+
+        .mailTo
+          color $c-blue
+
+        &.descRegister
+          align-items center
+          display flex
+          margin 15px 0 12px 0
+
+        & .btnBase.blue
+          font-size 16px
+          height 46px
+          letter-spacing 0.2px
+          margin 0 15px
+          width 134px
+
+          &:hover
+            background-color $c-blue-3
+
+    & .btnBase.blue
+      background-color $c-blue-2
+      font-size 18px
+      height 64px
+      letter-spacing 0.2px
+      line-height 22px
+      margin 32px auto 0 auto
+      padding 0 25px
+      text-align center
+      width 208px
+
+      &:hover
+        background-color $c-blue-3
+
+@media screen and (max-width: 890px)
+  .flytero
+    .characteristics
+      margin 0 auto
+      width 434px
+
+    .steps
+      padding-left 30px
+      padding-right 30px
+
+@media screen and (max-width 590px)
+  .flytero
+    .cover
+      padding 0 30px
+
+    .characteristics
+      padding 30px 0
+      width 320px
+
+      &:after
+        width 90%
+
+      &-card
+        width 124px
+
+    .steps
+      .card
+        margin-left 0
+        padding-left 20px
+        
+        &-description
+          &.descRegister
+            align-items flex-start
+            flex-direction column
+
+          & .btnBase.blue
+            margin 15px 0
+
