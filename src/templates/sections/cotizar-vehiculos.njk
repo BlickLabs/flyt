@@ -1,0 +1,31 @@
+{% extends "partials/base.njk" %}
+
+{% block title %}Cotizar Vehículos | Flyt{% endblock %}
+
+{% set meta_description = "Envía desde una bicicleta, hasta una nave espacial." %}
+{% set og_url = "" %}
+{% set og_title = "Cotizar Vehículos | Flyt" %}
+{% set og_description = "Envía desde una bicicleta, hasta una nave espacial." %}
+{% set og_img = "" %}
+{% set og_img_width = "" %}
+{% set og_img_height = "" %}
+
+{% set view_name = "cars" %}
+
+{% block content %}
+<section class="hubspotForm">
+  <h1 class="subtitleMd">Cotizar Vehículos</h1>
+
+  <div class="hubspotFormContainer">
+    <div class="hubspotFormSubContainer">
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+      <script>
+        hbspt.forms.create({
+          portalId: "5366761",
+          formId: "3825d49f-5bc0-4309-8e2d-42bf19e26edb"
+        });
+      </script>        
+    </div>
+  </div>
+</section>
+{% endblock %}
