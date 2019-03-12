@@ -1,0 +1,31 @@
+{% extends "partials/base.njk" %}
+
+{% block title %}Cotizar Electrodomésticos | Flyt{% endblock %}
+
+{% set meta_description = "Envía desde una bicicleta, hasta una nave espacial." %}
+{% set og_url = "" %}
+{% set og_title = "Cotizar Electrodomésticos | Flyt" %}
+{% set og_description = "Envía desde una bicicleta, hasta una nave espacial." %}
+{% set og_img = "" %}
+{% set og_img_width = "" %}
+{% set og_img_height = "" %}
+
+{% set view_name = "electrodomesticos" %}
+
+{% block content %}
+<section class="hubspotForm">
+  <h1 class="subtitleMd">Cotizar Electrodomésticos</h1>
+
+  <div class="hubspotFormContainer">
+    <div class="hubspotFormSubContainer">
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+      <script>
+        hbspt.forms.create({
+          portalId: "5366761",
+          formId: "f8643088-09e6-4482-ac3e-c68620fc7f2a"
+        });
+      </script>
+    </div>
+  </div>
+</section>
+{% endblock %}
