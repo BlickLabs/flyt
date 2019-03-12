@@ -23,7 +23,6 @@
       flex 1
       flex-direction column
       flex-wrap wrap
-      // height 192px
       justify-content space-between
       padding 0 25px 15px 25px
       width 160px
@@ -169,81 +168,6 @@
     .btnBase.orange
       margin 0 auto
 
-  .they
-    background-color #f5f5f5
-    padding 54px 0 23px 0
-
-    &-title
-      color $c-black
-      font-family 'avenir-next-demi'
-      -webkit-font-smoothing antialiased
-      font-size 32px
-      font-weight $regular
-      line-height 38px
-      margin 0 auto
-      max-width 450px
-      text-align center
-
-    &-card
-      background-color $c-white
-      border solid 1px #e5e5e5
-      height 174px
-      margin 0 46px 46px 46px
-      padding 16px 0
-      position relative
-      width 390px
-
-      &-wrapper
-        display flex
-        flex-wrap wrap
-        justify-content center
-        margin 82px 0 0 40px
-
-      &-avatar
-        height 139px
-        position absolute
-        width 139px
-
-        &-container
-          align-items center
-          background-color #e5e5e5
-          border solid 1px #e5e5e5
-          border-radius 100px
-          display flex
-          height 147px
-          justify-content center
-          left -73.5px
-          position absolute
-          top -27px
-          width 147px
-
-      &-name
-        border-bottom solid 1px #e5e5e5
-        color $c-black
-        font-family 'avenir-next-demi'
-        -webkit-font-smoothing antialiased
-        font-size 23px
-        font-weight $regular
-
-      &-description
-        color #323232
-        font-family 'avenir-next-italic'
-        -webkit-font-smoothing antialiased
-        font-size 13px
-        font-weight $regular
-        line-height 20px
-        padding-top 15px
-
-      &-name, &-description
-        padding-right 26px
-        padding-left 94px
-
-@media screen and (max-width 1018px)
-  .home
-    .they
-      &-card
-        margin-left 73px
-
 @media screen and (max-width 980px)
   .home
     .send
@@ -258,7 +182,6 @@
         &-wrapper
           margin-left auto
           margin-right auto
-          // width 480px
           width 100%
 
 @media screen and (max-width 749px)
@@ -274,10 +197,6 @@
           margin-left auto
           margin-right auto
           width 430px
-
-    .they
-      &-card
-        height auto
 
 @media screen and (max-width 480px)
   .home
@@ -330,26 +249,3 @@
       &-description
         font-size 18px
         line-height 26px
-
-    .they
-      &-title
-        font-size 26px
-        line-height 32px
-        padding 0 30px
-
-      &-card
-        &-wrapper
-          margin-left 20px
-          margin-right 0
-
-        &-avatar
-          height 91px
-          width 91px
-
-          &-container
-            height 99px
-            left -49.5px
-            width 99px
-
-        &-name, &-description
-          padding-left 70px

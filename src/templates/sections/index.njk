@@ -65,16 +65,16 @@
     <a class="btnBase orange" href="" onclick="dataLayer.push({'event': 'cotizar-envio-fold-5'});">Cotizar envío</a>
   </section>
 
-  <section class="they">
-    <h2 class="they-title">Ellos ya se están beneficiando de Flyt</h2>
-    <div class="they-card-wrapper">
-      {% for card in es.home.they.cards %}
-      <div class="they-card">
-        <div class="they-card-avatar-container">
-          <img class="they-card-avatar" src="{{card.avatar}}" alt="{{card.title}}">
+  <section class="testimonials">
+    <h2 class="testimonials-title">Ellos ya se están beneficiando de Flyt</h2>
+    <div class="testimonials-card-wrapper">
+      {% for card in es.home.testimonials.cards %}
+      <div class="testimonials-card">
+        <div class="testimonials-card-avatar-container">
+          <img class="testimonials-card-avatar" src="{{card.avatar}}" alt="{{card.title}}">
         </div>
-        <h3 class="they-card-name">{{card.name}}</h3>
-        <p class="they-card-description">{{card.description}}</p>
+        <h3 class="testimonials-card-name">{{card.name}}</h3>
+        <p class="testimonials-card-description">{{card.description}}</p>
       </div>
       {% endfor %}
     </div>

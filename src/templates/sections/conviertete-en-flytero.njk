@@ -1,0 +1,115 @@
+{% extends "partials/base.njk" %}
+
+{% block title %}Conviértete en Flytero | Flyt{% endblock %}
+
+{% set meta_description = "Aumenta tus ingresos y reduce tus costos convirtiéndote en Flytero" %}
+{% set og_url = "" %}
+{% set og_title = "Conviértete en Flytero | Flyt" %}
+{% set og_description = "Aumenta tus ingresos y reduce tus costos convirtiéndote en Flytero" %}
+{% set og_img = "" %}
+{% set og_img_width = "" %}
+{% set og_img_height = "" %}
+
+{% set view_name = "flyt" %}
+
+{% block content %}
+<section class="flytero">
+  <section class="cover">
+    <h1 class="cover-title">Conviértete en Flytero</h1>
+    <p class="cover-description">Aumenta tus ingresos y reduce tus costos<br>Anticipo garantizado y pago contra entrega</p>
+    <img class="cover-icon" src="img/icons/icono-camion-transparente.png" alt="Conviértete en Flytero">
+  </section>
+
+  <section class="characteristics">
+    {% for card in es.flytero.characteristics.cards %}
+    <div class="characteristics-card">
+      <div class="characteristics-icon-container">
+        <img class="characteristics-icon" src="{{ card.icon }}" alt="{{ card.title }}">
+      </div>
+      <h2 class="characteristics-title">{{ card.title }}</h2>
+      <p class="characteristics-description">{{ card.description }}</p>
+    </div>
+    {% endfor %}
+  </section>
+
+  <section class="steps">
+    <h2 class="steps-title titleVariant">regístrate para ser flytero</h2>
+    <div class="card">
+      <div class="card-title-container">
+        <img class="card-icon iconRegister" src="img/icons/icono-lapiz.png" alt="¿Cómo me registro?">
+        <h3 class="card-title">¿Cómo me registro?</h3>
+      </div>
+      <p class="card-description descRegister">A través de <a class="btnBase blue" href="registro.html">Registro</a> no te tomará más de 1 minuto</p>
+      <p class="card-description">Cualquier cosa que necesites no dudes en contactarnos en nuestro chat de atención y/o por correo <a class="mailTo" href="mailto:flyteros@flyt.mx">flyteros@flyt.mx</a></p>
+    </div>
+
+    <h2 class="steps-title">oferta</h2>
+    <div class="card">
+      <div class="card-title-container">
+        <img class="card-icon iconSearch" src="img/icons/icono-elige.png" alt="¿Cómo me registro?">
+        <h3 class="card-title">Busca y Encuentra</h3>
+      </div>
+      <p class="card-description">En nuestra sección de cargas podrás encontrar las cargas de tu interés, considerando: origen, destino, tipo de mercancía y fecha.</p>
+      <p class="card-description">Inclusive podrás buscar cargas que estén dentro de una ruta.</p>
+
+      <div class="card-title-container">
+        <img class="card-icon iconSale" src="img/icons/icono-chincheta.png" alt="¿Cómo me registro?">
+        <h3 class="card-title">Oferta</h3>
+      </div>
+      <p class="card-description">Podrás preguntarle al cliente información específica del envío.<br>Cuando no tengas dudas, realiza una oferta sobre el servicio.</p>
+
+      <div class="card-title-container">
+        <img class="card-icon iconWin" src="img/icons/icono-comprobacion.png" alt="¿Cómo me registro?">
+        <h3 class="card-title">Gana la oferta</h3>
+      </div>
+      <p class="card-description">Con una comunicación adecuada y un precio justo, seguramente tu oferta ganará.</p>
+      <p class="card-description">¡Felicidades, tienes un nuevo cliente!</p>
+    </div>
+
+    <h2 class="steps-title">transporta</h2>
+    <div class="card">
+      <div class="card-title-container">
+        <img class="card-icon iconCommunicate" src="img/icons/icono-recibe.png" alt="¿Cómo me registro?">
+        <h3 class="card-title">Comunícate</h3>
+      </div>
+      <p class="card-description">Define con tu cliente la recolección y entrega</p>
+
+      <div class="card-title-container">
+        <img class="card-icon iconTransport" src="img/icons/icono-camion-azul.png" alt="¿Cómo me registro?">
+        <h3 class="card-title">Transporta y Entrega</h3>
+      </div>
+      <p class="card-description">Realiza el envío de la mercancía, está parte la dominas.</p>
+    </div>
+
+    <h2 class="steps-title">relájate</h2>
+    <div class="card">
+      <div class="card-title-container">
+        <img class="card-icon iconConfirm" src="img/icons/icono-comprobacion-cuadrado.png" alt="¿Cómo me registro?">
+        <h3 class="card-title">Confirma la entrega y mándanos el POD.</h3>
+      </div>
+
+      <div class="card-title-container">
+        <img class="card-icon iconDeposit" src="img/icons/icono-alcancia.png" alt="¿Cómo me registro?">
+        <h3 class="card-title">Una vez que hayas completado el envío, te depositamos el dinero.</h3>
+      </div>
+    </div>
+
+    <a class="btnBase blue" href="registro.html">Convertirme en Flytero</a>
+  </section>
+
+  <section class="testimonials">
+    <h2 class="testimonials-title">Ellos ya se están beneficiando de Flyt</h2>
+    <div class="testimonials-card-wrapper">
+      {% for card in es.flytero.testimonials.cards %}
+      <div class="testimonials-card">
+        <div class="testimonials-card-avatar-container">
+          <img class="testimonials-card-avatar" src="{{card.avatar}}" alt="{{card.title}}">
+        </div>
+        <h3 class="testimonials-card-name">{{card.name}}</h3>
+        <p class="testimonials-card-description">{{card.description}}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+</section>
+{% endblock %}

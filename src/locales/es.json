@@ -8,8 +8,8 @@
       "sections": [
         {
           "name": "Conviértete en Flytero",
-          "link": "index.html",
-          "viewName": "lala"
+          "link": "conviertete-en-flytero.html",
+          "viewName": "flytero"
         },
         {
           "name": "Contáctanos",
@@ -78,7 +78,7 @@
           }
         ]
       },
-      "they": {
+      "testimonials": {
         "cards": [
           {
             "avatar": "img/utils/rodrigo-marquez.png",
@@ -89,6 +89,47 @@
             "avatar": "img/utils/claudia-lopez.png",
             "name": "Claudia López",
             "description": "\"Simple y efectivo, lo usaré con mayor frecuencia. Flyt hace que el proceso de envíos sea mucho más confiable y rápido.\""
+          }
+        ]
+      }
+    },
+    "flytero": {
+      "cover": {},
+      "characteristics": {
+        "cards": [
+          {
+            "icon": "img/icons/icono-mano-con-dinero.png",
+            "title": "Anticipo",
+            "description": "Anticipo y pago contra entrega"
+          },
+          {
+            "icon": "img/icons/icono-camion-azul.png",
+            "title": "Ocupación",
+            "description": "Olvídate de los regresos en vacío e incrementa la ocupación de tu transporte"
+          },
+          {
+            "icon": "img/icons/icono-comprobacion.png",
+            "title": "Tiempos muertos",
+            "description": "Reduce tus tiempos muertos, nosotros te recomendamos cargas"
+          },
+          {
+            "icon": "img/icons/icono-tarjeta.png",
+            "title": "Cobranza",
+            "description": "Sin problemas de cobranza, nosotros te respaldamos"
+          }
+        ]
+      },
+      "testimonials": {
+        "cards": [
+          {
+            "avatar": "img/utils/arturo-lopez.png",
+            "name": "Arturo López",
+            "description": "\"He aumentado la ocupación de mis vehículos constantemente al consolidar las cargas dentro de Flyt.\""
+          },
+          {
+            "avatar": "img/utils/ramon-fernandez.png",
+            "name": "Ramón Fernández",
+            "description": "\"Mis problemas de cobranza se han reducido drásticamente, inclusive cuento con anticipo para solventar los viáticos.\""
           }
         ]
       }
