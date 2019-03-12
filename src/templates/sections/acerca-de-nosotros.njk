@@ -1,0 +1,41 @@
+{% extends "partials/base.njk" %}
+
+{% block title %}Más de 25 años de experiencia en logística y transporte | Flyt{% endblock %}
+
+{% set meta_description = "Dedicados a conectar personas/negocios que buscan enviar cualquier tipo de mercancía." %}
+{% set og_url = "" %}
+{% set og_title = "Más de 25 años de experiencia en logística y transporte | Flyt" %}
+{% set og_description = "Dedicados a conectar personas/negocios que buscan enviar cualquier tipo de mercancía." %}
+{% set og_img = "" %}
+{% set og_img_width = "" %}
+{% set og_img_height = "" %}
+
+{% set view_name = "aboutus" %}
+
+{% block content %}
+<section class="aboutus">
+  <section class="cover">
+    <h1 class="cover-title">Acerca de nosotros</h1>
+  </section>
+
+  <section class="data">
+    {% for card in es.aboutus.data %}
+    <div class="data-card">
+      <div class="data-card-img-container">
+        <img class="{{ card.iconClass }}" src="{{ card.icon }}" alt="{{ card.title }}">
+      </div>
+      <span class="data-card-numbers">{{ card.numbers }}</span>
+      <h2 class="data-card-title">{{ card.title }}</h2>
+    </div>
+    {% endfor %}
+  </section>
+
+  <section class="description">
+    <div class="description-content">
+      {% for item in es.aboutus.description %}
+      <p class="description-paragraph">{{ item.paragraph }}</p>
+      {% endfor %}
+    </div>
+  </section>
+</section>
+{% endblock %}
