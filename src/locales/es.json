@@ -134,6 +134,57 @@
         ]
       }
     },
+    "aboutus": {
+      "data": [
+        {
+          "icon": "img/icons/icono-persona.png",
+          "iconClass": "iconClientes",
+          "numbers": "+3,360",
+          "title": "Clientes"
+        },
+        {
+          "icon": "img/icons/icono-manos-al-volante.png",
+          "iconClass": "iconTransportistas",
+          "numbers": "+2,997",
+          "title": "Transportistas"
+        },
+        {
+          "icon": "img/icons/icono-camion-dibujo.png",
+          "iconClass": "iconEnvios",
+          "numbers": "+16,800",
+          "title": "Envíos"
+        },
+        {
+          "icon": "img/icons/icono-carretera.png",
+          "iconClass": "iconKMRecorridos",
+          "numbers": "+1.5 Millones",
+          "title": "Km recorridos"
+        },
+        {
+          "icon": "img/icons/icono-esmog.png",
+          "iconClass": "iconC02Ahorrado",
+          "numbers": "+75 Ton CO2",
+          "title": "C02 ahorrado"
+        },
+        {
+          "icon": "img/icons/icono-billetes.png",
+          "iconClass": "iconDineroAhorrado",
+          "numbers": "+800 mil",
+          "title": "Dinero ahorrado"
+        }
+      ],
+      "description": [
+        {
+          "paragraph": "Con más de 25 años de experiencia en logística y transporte, tanto como cliente como proveedor, conocemos las dificultades de ambas partes y es por eso que creamos la solución."
+        },
+        {
+          "paragraph": "FLYT es una plataforma dedicada a conectar personas/negocios que buscan enviar cualquier tipo de mercancía con Flyteros(Transportistas) que tienen unidades/espacios disponibles en búsqueda de carga."
+        },
+        {
+          "paragraph": "Facilitamos la forma de unir carga y transporte, maximizando los beneficios para ambas partes, buscando siempre escenarios Ganar-Ganar. Reduciendo el impacto ambiental al optimizar el transporte."
+        }
+      ]
+    },
     "footer": {
       "logo": "img/logos/logo-transparente.png",
       "logoAlt": "Logo del sitio dentro del pie de página",
