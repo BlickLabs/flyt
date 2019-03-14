@@ -1,0 +1,31 @@
+{% extends "partials/base.njk" %}
+
+{% block title %}Cotizar envío | Flyt{% endblock %}
+
+{% set meta_description = "Envía desde una bicicleta, hasta una nave espacial." %}
+{% set og_url = "" %}
+{% set og_title = "Cotizar envío | Flyt" %}
+{% set og_description = "Envía desde una bicicleta, hasta una nave espacial." %}
+{% set og_img = "" %}
+{% set og_img_width = "" %}
+{% set og_img_height = "" %}
+
+{% set view_name = "quote" %}
+
+{% block content %}
+<section class="quote" style="padding-top: 18px;">
+  <section class="whatDoYouSend">
+    <h2 class="subtitleMd">¿Qué envías?</h2>
+    <div class="whatDoYouSend-package-wrapper">
+      {% for package in es.home.send.packages %}
+      <a class="whatDoYouSend-package" href="{{ package.link }}">
+        <div class="whatDoYouSend-package-img-container">
+          <img class="whatDoYouSend-package-img" src="{{package.img}}" alt="{{package.title}}">
+        </div>
+        <p class="whatDoYouSend-package-title">{{package.title}}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+</section>
+{% endblock %}
