@@ -2,7 +2,7 @@ server {
   listen 80;
   listen [::]:80;
 
-  root /home/static/project-flyt;
+  root /home/static/flyt;
   index index.html index.htm;
 
   server_name flyt.com.mx flyt.mx;
