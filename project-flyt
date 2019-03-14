@@ -2,10 +2,10 @@ server {
   listen 80;
   listen [::]:80;
 
-  root /home/static/project-;
+  root /home/static/project-flyt;
   index index.html index.htm;
 
-  server_name ;
+  server_name flyt.com.mx flyt.mx;
 
   location / {
       try_files $uri $uri/ =404;
