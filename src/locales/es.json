@@ -1,24 +1,24 @@
 {
   "es": {
     "nav": {
-      "logo": "img/logos/logo-azul.png",
+      "logo": "/img/logos/logo-azul.png",
       "logoAlt": "Logo del sitio dentro de la barra de navegación",
       "hamburgerLogoAlt": "Logo del sitio dentro del menu hamburguesa",
       "hamburgerCloseAlt": "Ícono en forma de X para cerrar el menu hamburguesa",
       "sections": [
         {
           "name": "Conviértete en Flytero",
-          "link": "conviertete-en-flytero.html",
+          "link": "/conviertete-en-flytero.html",
           "viewName": "flytero"
         },
         {
           "name": "Contáctanos",
-          "link": "index.html",
+          "link": "/contactanos.html",
           "viewName": "lala2"
         },
         {
           "name": "Cotizar envío",
-          "link": "index.html",
+          "link": "/cotizar-envio.html",
           "linkBtnClass": "quote",
           "viewName": "lala3"
         }
@@ -29,50 +29,56 @@
       "send": {
         "packages": [
           {
-            "img": "img/utils/envios-vehiculos-2x.jpg",
-            "title": "Vehículos"
+            "img": "/img/utils/envios-vehiculos-2x.jpg",
+            "title": "Vehículos",
+            "link": "/cotizar-vehiculos.html"
           },
           {
-            "img": "img/utils/envios-articulos-domesticos-2x.jpg",
-            "title": "Artículos domésticos"
+            "img": "/img/utils/envios-articulos-domesticos-2x.jpg",
+            "title": "Artículos domésticos",
+            "link": "/cotizar-electrodomesticos.html"
           },
           {
-            "img": "img/utils/envios-mudanzas-2x.jpg",
-            "title": "Mudanzas"
+            "img": "/img/utils/envios-mudanzas-2x.jpg",
+            "title": "Mudanzas",
+            "link": "/cotizar-mudanzas.html"
           },
           {
-            "img": "img/utils/envios-maquinaria-pesada-2x.jpg",
-            "title": "Maquinaria pesada"
+            "img": "/img/utils/envios-maquinaria-pesada-2x.jpg",
+            "title": "Maquinaria pesada",
+            "link": "/cotizar-maquinaria-pesada.html"
           },
           {
-            "img": "img/utils/envios-tarimas-cajas-bultos-2x.jpg",
-            "title": "Tarimas, cajas, bultos"
+            "img": "/img/utils/envios-tarimas-cajas-bultos-2x.jpg",
+            "title": "Tarimas, cajas, bultos",
+            "link": "/cotizar-tarimas-cajas-y-bultos.html"
           },
           {
-            "img": "img/utils/envios-otros-2x.jpg",
-            "title": "Otros"
+            "img": "/img/utils/envios-otros-2x.jpg",
+            "title": "Otros",
+            "link": "/cotizar-otros.html"
           }
         ]
       },
       "work": {
         "items": [
           {
-            "icon": "img/icons/icono-cotiza.png",
+            "icon": "/img/icons/icono-cotiza.png",
             "title": "cotiza",
             "description": "Completa un sencillo formulario y dinos que quieres enviar."
           },
           {
-            "icon": "img/icons/icono-recibe.png",
+            "icon": "/img/icons/icono-recibe.png",
             "title": "recibe",
             "description": "Recibirás ofertas competitivas de nuestra red de Flyteros."
           },
           {
-            "icon": "img/icons/icono-elige.png",
+            "icon": "/img/icons/icono-elige.png",
             "title": "elige",
             "description": "Compara las distintas ofertas, comprueba los detalles y valoraciones."
           },
           {
-            "icon": "img/icons/icono-relajate.png",
+            "icon": "/img/icons/icono-relajate.png",
             "title": "relájate",
             "description": "Confía. Nosotros nos encargamos del resto."
           }
@@ -81,12 +87,12 @@
       "testimonials": {
         "cards": [
           {
-            "avatar": "img/utils/rodrigo-marquez.png",
+            "avatar": "/img/utils/rodrigo-marquez.png",
             "name": "Rodrigo Márquez",
             "description": "\"La mejor manera de recibir distintivas ofertas sin la necesidad de realizar múltiples llamadas. Definitivamente volveré a usar Flyt, me ahorro: tiempo y dinero, pero sobre todo el servicio fue excepcional.\""
           },
           {
-            "avatar": "img/utils/claudia-lopez.png",
+            "avatar": "/img/utils/claudia-lopez.png",
             "name": "Claudia López",
             "description": "\"Simple y efectivo, lo usaré con mayor frecuencia. Flyt hace que el proceso de envíos sea mucho más confiable y rápido.\""
           }
@@ -98,22 +104,22 @@
       "characteristics": {
         "cards": [
           {
-            "icon": "img/icons/icono-mano-con-dinero.png",
+            "icon": "/img/icons/icono-mano-con-dinero.png",
             "title": "Anticipo",
             "description": "Anticipo y pago contra entrega"
           },
           {
-            "icon": "img/icons/icono-camion-azul.png",
+            "icon": "/img/icons/icono-camion-azul.png",
             "title": "Ocupación",
             "description": "Olvídate de los regresos en vacío e incrementa la ocupación de tu transporte"
           },
           {
-            "icon": "img/icons/icono-comprobacion.png",
+            "icon": "/img/icons/icono-comprobacion.png",
             "title": "Tiempos muertos",
             "description": "Reduce tus tiempos muertos, nosotros te recomendamos cargas"
           },
           {
-            "icon": "img/icons/icono-tarjeta.png",
+            "icon": "/img/icons/icono-tarjeta.png",
             "title": "Cobranza",
             "description": "Sin problemas de cobranza, nosotros te respaldamos"
           }
@@ -122,12 +128,12 @@
       "testimonials": {
         "cards": [
           {
-            "avatar": "img/utils/arturo-lopez.png",
+            "avatar": "/img/utils/arturo-lopez.png",
             "name": "Arturo López",
             "description": "\"He aumentado la ocupación de mis vehículos constantemente al consolidar las cargas dentro de Flyt.\""
           },
           {
-            "avatar": "img/utils/ramon-fernandez.png",
+            "avatar": "/img/utils/ramon-fernandez.png",
             "name": "Ramón Fernández",
             "description": "\"Mis problemas de cobranza se han reducido drásticamente, inclusive cuento con anticipo para solventar los viáticos.\""
           }
@@ -137,37 +143,37 @@
     "aboutus": {
       "data": [
         {
-          "icon": "img/icons/icono-persona.png",
+          "icon": "/img/icons/icono-persona.png",
           "iconClass": "iconClientes",
           "numbers": "+3,360",
           "title": "Clientes"
         },
         {
-          "icon": "img/icons/icono-manos-al-volante.png",
+          "icon": "/img/icons/icono-manos-al-volante.png",
           "iconClass": "iconTransportistas",
           "numbers": "+2,997",
           "title": "Transportistas"
         },
         {
-          "icon": "img/icons/icono-camion-dibujo.png",
+          "icon": "/img/icons/icono-camion-dibujo.png",
           "iconClass": "iconEnvios",
           "numbers": "+16,800",
           "title": "Envíos"
         },
         {
-          "icon": "img/icons/icono-carretera.png",
+          "icon": "/img/icons/icono-carretera.png",
           "iconClass": "iconKMRecorridos",
           "numbers": "+1.5 Millones",
           "title": "Km recorridos"
         },
         {
-          "icon": "img/icons/icono-esmog.png",
+          "icon": "/img/icons/icono-esmog.png",
           "iconClass": "iconC02Ahorrado",
           "numbers": "+75 Ton CO2",
           "title": "C02 ahorrado"
         },
         {
-          "icon": "img/icons/icono-billetes.png",
+          "icon": "/img/icons/icono-billetes.png",
           "iconClass": "iconDineroAhorrado",
           "numbers": "+800 mil",
           "title": "Dinero ahorrado"
@@ -186,17 +192,17 @@
       ]
     },
     "footer": {
-      "logo": "img/logos/logo-transparente.png",
+      "logo": "/img/logos/logo-transparente.png",
       "logoAlt": "Logo del sitio dentro del pie de página",
       "sections": [
         {
           "name": "Acerca de nosotros",
-          "link": "index.html",
+          "link": "/acerca-de-nosotros.html",
           "viewName": "aboutus"
         },
         {
           "name": "Contacto",
-          "link": "index.html",
+          "link": "/contactanos.html",
           "viewName": "contact"
         }
       ]

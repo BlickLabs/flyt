@@ -16,18 +16,18 @@
 <section class="home">
   <section class="cover">
     <h1 class="bigTitle">Garantizamos <span>el envío de tu mercancía al</span> mejor precio del mercado</h1>
-    <a class="btnBase yellow" href="" onclick="dataLayer.push({'event': 'cotizar-envio-cover'});">Cotizar envío</a>
+    <a class="btnBase yellow" href="/cotizar-envio.html" onclick="dataLayer.push({'event': 'cotizar-envio-cover'});">Cotizar envío</a>
   </section>
 
-  <section class="send">
+  <section class="whatDoYouSend">
     <h2 class="subtitleMd">¿Qué envías?</h2>
-    <div class="send-package-wrapper">
+    <div class="whatDoYouSend-package-wrapper">
       {% for package in es.home.send.packages %}
-      <a class="send-package" href="">
-        <div class="send-package-img-container">
-          <img class="send-package-img" src="{{package.img}}" alt="{{package.title}}">
+      <a class="whatDoYouSend-package" href="{{ package.link }}">
+        <div class="whatDoYouSend-package-img-container">
+          <img class="whatDoYouSend-package-img" src="{{package.img}}" alt="{{package.title}}">
         </div>
-        <p class="send-package-title">{{package.title}}</p>
+        <p class="whatDoYouSend-package-title">{{package.title}}</p>
       </a>
       {% endfor %}
     </div>
@@ -35,7 +35,7 @@
 
   <section class="quotation">
     <h2 class="quotation-description">Envía desde <span>una bicicleta</span>, hasta una <span>nave espacial</span></h2>
-    <a class="btnBase orange" href="" onclick="dataLayer.push({'event': 'cotizar-envio-fold-3'});">Cotizar envío</a>
+    <a class="btnBase orange" href="/cotizar-envio.html" onclick="dataLayer.push({'event': 'cotizar-envio-fold-3'});">Cotizar envío</a>
   </section>
 
   <section class="work">
@@ -51,7 +51,7 @@
       </div>
       {% endfor %}
     </div>
-    <a class="btnBase blue" href="" onclick="dataLayer.push({'event': 'cotizar-envio-fold-4'});">Cotizar envío</a>
+    <a class="btnBase blue" href="/cotizar-envio.html" onclick="dataLayer.push({'event': 'cotizar-envio-fold-4'});">Cotizar envío</a>
   </section>
 
   <section class="why">
@@ -62,7 +62,7 @@
       <p class="why-description">Reduce tu impacto ambiental</p>
       <p class="why-description">Ahorra hasta un 75% contra tarifas normales</p>
     </div>
-    <a class="btnBase orange" href="" onclick="dataLayer.push({'event': 'cotizar-envio-fold-5'});">Cotizar envío</a>
+    <a class="btnBase orange" href="/cotizar-envio.html" onclick="dataLayer.push({'event': 'cotizar-envio-fold-5'});">Cotizar envío</a>
   </section>
 
   <section class="testimonials">

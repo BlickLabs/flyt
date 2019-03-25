@@ -1,0 +1,39 @@
+{% extends "partials/base.njk" %}
+
+{% block title %}Solicitud en proceso | Flyt{% endblock %}
+
+{% set meta_description = "En este momento nos ponemos a buscar el mejor servicio al mejor costo con nuestra red de Flyteros." %}
+{% set og_url = "" %}
+{% set og_title = "Solicitud en proceso | Flyt" %}
+{% set og_description = "En este momento nos ponemos a buscar el mejor servicio al mejor costo con nuestra red de Flyteros." %}
+{% set og_img = "" %}
+{% set og_img_width = "" %}
+{% set og_img_height = "" %}
+
+{% set view_name = "quote" %}
+
+{% block content %}
+<style>
+  .thanks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 10% 50px 10%;
+  }
+
+  .thanks p {
+    color: #4a4a4a;
+    font-family: 'avenir-next-regular';
+    -webkit-font-smoothing: antialiased;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 28px;
+  }
+</style>
+
+<section class="thanks">
+  <p>En este momento nos ponemos a buscar el mejor servicio al mejor costo con nuestra red de Flyteros para la solicitud que nos acabas de proporcionar. No dudes en contactarnos en cualquier momento a <a href="mailto:hola@flyt.mx" style="color: #426e9f;">hola@flyt.mx</a> en caso de que tengas cualquier duda.</p>
+  <p style="text-align: right;">-El equipo de Flyt</p>
+</section>
+{% endblock %}

@@ -123,6 +123,53 @@
       padding-right 26px
       padding-left 94px
 
+/* ¿QUÉ ENVÍAS? BASE STYLES */
+
+.whatDoYouSend
+  padding-top 32px
+
+  .subtitleMd
+    margin-bottom 20px
+
+  &-package
+    align-items center
+    border-right solid 1px #e5e5e5
+    display flex
+    flex 1
+    flex-direction column
+    flex-wrap wrap
+    justify-content space-between
+    padding 0 25px 15px 25px
+    width 160px
+
+    &:last-child
+      border-right none
+
+    &-wrapper
+      border-top solid 1px #e5e5e5
+      display flex
+      flex-wrap wrap
+      justify-content center
+
+    &-img
+      max-height 100%
+      max-width 100%
+
+      &-container
+        align-items center
+        display flex
+        height 145px
+        padding-top 15px
+
+    &-title
+      color $c-black
+      font-family 'avenir-next-medium'
+      -webkit-font-smoothing antialiased
+      font-size 18px
+      font-weight $regular
+      line-height 20px
+      text-align center
+
 /* HUBSPOT FORM STYLES */
 
 .hubspotForm
@@ -144,6 +191,28 @@
     &-card
       margin-left 73px
 
+  .whatDoYouSend
+    &-package
+      border-bottom solid 1px #e5e5e5
+      flex-basis 33.33%
+      padding-top 15px
+      // width: 33.33%
+
+@media screen and (max-width 980px)
+  .whatDoYouSend
+    &-package
+      // border-bottom solid 1px #e5e5e5
+      // padding-top 15px
+      // width: 33.33%
+
+      &:nth-child(3)
+        border-right none
+
+      &-wrapper
+        margin-left auto
+        margin-right auto
+        width 100%
+
 @media screen and (max-width 749px)
   .testimonials
     &-card
@@ -161,6 +230,23 @@
 
   .subtitleMd
     font-size 24px
+
+  .whatDoYouSend
+    &-package
+      border-bottom solid 1px #e5e5e5
+      flex-basis 50%
+      padding-top 15px
+
+      &:nth-child(3)
+        border-right solid 1px #e5e5e5
+
+      &-wrapper
+        width auto
+
+      &-img
+        &-container
+          justify-content center
+          margin-bottom 20px
 
   .testimonials
     &-title
