@@ -5,7 +5,7 @@ server {
   root /home/static/flyt;
   index index.html index.htm;
 
-  server_name flyt.com.mx flyt.mx;
+  server_name flyt.com.mx flyt.mx www.flyt.mx www.flyt.com.mx;
 
   location / {
       try_files $uri $uri/ =404;
