@@ -3,14 +3,14 @@
 {% block title %}Conviértete en Flytero | Flyt{% endblock %}
 
 {% set meta_description = "Aumenta tus ingresos y reduce tus costos convirtiéndote en Flytero" %}
-{% set og_url = "" %}
+{% set og_url = "http://flyt.mx/" %}
 {% set og_title = "Conviértete en Flytero | Flyt" %}
 {% set og_description = "Aumenta tus ingresos y reduce tus costos convirtiéndote en Flytero" %}
-{% set og_img = "" %}
-{% set og_img_width = "" %}
-{% set og_img_height = "" %}
+{% set og_img = "http://flyt.mx/img/seo/conviertete-en-flytero-seo.jpg" %}
+{% set og_img_width = "1000" %}
+{% set og_img_height = "667" %}
 
-{% set view_name = "flyt" %}
+{% set view_name = "flytero" %}
 
 {% block content %}
 <section class="flytero">
@@ -39,7 +39,7 @@
         <img class="card-icon iconRegister" src="img/icons/icono-lapiz.png" alt="¿Cómo me registro?">
         <h3 class="card-title">¿Cómo me registro?</h3>
       </div>
-      <p class="card-description descRegister">A través de <a class="btnBase blue" href="registro.html">Registro</a> no te tomará más de 1 minuto</p>
+      <p class="card-description descRegister"><span style="align-items: center; display: flex;">A través de <a class="btnBase blue" href="registro.html">Registro</a></span> <span style="margin: 10px 0;">no te tomará más de 1 minuto</span></p>
       <p class="card-description">Cualquier cosa que necesites no dudes en contactarnos en nuestro chat de atención y/o por correo <a class="mailTo" href="mailto:flyteros@flyt.mx">flyteros@flyt.mx</a></p>
     </div>
 
@@ -47,7 +47,10 @@
     <div class="card">
       <div class="card-title-container">
         <img class="card-icon iconSearch" src="img/icons/icono-elige.png" alt="¿Cómo me registro?">
-        <h3 class="card-title">Busca y Encuentra</h3>
+        <div class="buscaEncuentra">
+          <h3 class="card-title">Busca y Encuentra</h3>
+          <img class="buscaEncuentra-img" src="/img/utils/busca-y-encuentra.png" alt="Busca y encuentra">
+        </div>
       </div>
       <p class="card-description">En nuestra sección de cargas podrás encontrar las cargas de tu interés, considerando: origen, destino, tipo de mercancía y fecha.</p>
       <p class="card-description">Inclusive podrás buscar cargas que estén dentro de una ruta.</p>
@@ -110,6 +113,7 @@
       </div>
       {% endfor %}
     </div>
+    <a class="btnBase blue" href="registro.html">Convertirme en Flytero</a>
   </section>
 </section>
 {% endblock %}

@@ -14,13 +14,13 @@
         {
           "name": "Contáctanos",
           "link": "/contactanos.html",
-          "viewName": "lala2"
+          "viewName": "contactanos"
         },
         {
           "name": "Cotizar envío",
           "link": "/cotizar-envio.html",
           "linkBtnClass": "quote",
-          "viewName": "lala3"
+          "viewName": "cotizarenvio"
         }
       ]
     },
@@ -203,7 +203,7 @@
         {
           "name": "Contacto",
           "link": "/contactanos.html",
-          "viewName": "contact"
+          "viewName": "contactanos"
         }
       ]
     }

@@ -142,11 +142,25 @@
     padding 60px 0 74px 0
 
     &-bg
-      background-image url("../img/backgrounds/por-que-flyt-2x.jpg")
-      background-position bottom
-      background-size cover
+      // background-image url("../img/backgrounds/por-que-flyt-2x.jpg")
+      // background-position bottom
+      // background-size cover
       height 370px
       margin-top 58px
+      position relative
+
+      &:before
+        background-attachment fixed
+        background-image url("../img/backgrounds/por-que-flyt-4x.png")
+        background-position center
+        background-repeat no-repeat
+        background-size cover
+        content ""
+        height 100%
+        left 0
+        position absolute
+        top 0
+        width 100%
 
     &-description
       color $c-black
@@ -197,6 +211,11 @@
           margin-left auto
           margin-right auto
           width 430px
+
+    .why
+      &-bg
+        &:before
+          background-attachment initial
 
 @media screen and (max-width 480px)
   .home
