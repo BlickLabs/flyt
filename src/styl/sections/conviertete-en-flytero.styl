@@ -158,6 +158,15 @@
           display flex
           margin 29px 0 12px 0
 
+          .buscaEncuentra
+            align-items center
+            display flex
+
+            &-img
+              height 16px
+              margin 0 0 10px 10px
+              width 117px
+
       &-description
         color $c-black
         font-family 'avenir-next-medium'
@@ -199,6 +208,18 @@
       &:hover
         background-color $c-blue-3
 
+  .testimonials
+    .btnBase.blue
+      background-color $c-blue-2
+      font-size 18px
+      height 64px
+      letter-spacing 0.2px
+      line-height 22px
+      margin 12px auto 31px auto
+      padding 0 25px
+      text-align center
+      width 208px
+
 @media screen and (max-width: 890px)
   .flytero
     .characteristics
@@ -208,6 +229,15 @@
     .steps
       padding-left 30px
       padding-right 30px
+
+@media screen and (max-width 650px)
+  .flytero
+    .steps
+        .card
+          &-description
+            &.descRegister
+              align-items flex-start
+              flex-direction column
 
 @media screen and (max-width 590px)
   .flytero
@@ -235,5 +265,5 @@
             flex-direction column
 
           & .btnBase.blue
-            margin 15px 0
-
+            // margin 15px 0
+            margin 0 0 0 15px

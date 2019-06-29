@@ -36,7 +36,7 @@
     </div>
     <div class="hamburger-menu-body nunitosans-regular" data-attribute="">
       {% for section in es.nav.sections %}
-      <div class="hamburger-text-container">
+      <div class="hamburger-text-container {% if view_name == section.viewName %}active{% endif %}">
         <a href="{{section.link}}">
           <span class="hamburger-text {% if view_name == nav.viewName %}hamburger-active{% endif %}">{{section.name}}</span>
         </a>
